@@ -109,10 +109,10 @@ ios >= 6
 {
   test: /\.scss$/,
   use: [
-    'style-loader',
-    'css-loader',
-    'postcss-loader',
-    'sass-loader'
+    'style-loader',   // 将CSS以style的形式载入HTML
+    'css-loader',     // 解析CSS
+    'postcss-loader', // 自动添加CSS3前缀
+    'sass-loader'     // 解析SCSS
   ]
 }
 ```
@@ -121,7 +121,7 @@ ios >= 6
 {
   loader: 'css-loader',
   options: {
-    sourceMap: true
+    sourceMap: true   // 追踪CSS源码
   }
 }
 ```
